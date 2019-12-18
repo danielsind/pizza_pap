@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>pizza_pap</title>
 </head>
-<body class="container-fluid">
-    <div class="jumbotron">
+<body id="body" class="container-fluid">
+    <div class="jumbotron" id="home">
       <img src="./img/Kids Who Over Eat and How to Help Them Along the Way.jpeg" width="100%">
       <div class="carousel-caption">
         <div>
@@ -19,15 +19,100 @@
      <div class="container">
         <nav class="navbar navbar sticky-top navbar-light bg-transparent">
           <ul>
-            <li class="d-inline-block"><a class="navbar-brand" href="#">Home</a></li>
-            <li class="d-inline-block"><a class="navbar-brand" href="#">Pizza</a></li>
-            <li class="d-inline-block"><a class="navbar-brand" href="#">Navbar</a></li>
-            <li class="d-inline-block"><a class="navbar-brand" href="#">Navbar</a></li>
+            <li class="d-inline-block"><a class="navbar-brand" href="#home">Home</a></li>
+            <li class="d-inline-block"><a class="navbar-brand" href="#order">Order</a></li>
+            <li class="d-inline-block"><a class="navbar-brand" href="#extra">Extra Order</a></li>
 
           </ul>
           </nav>
 
      </div>
+    </div>
+    </div>
+    <div id="order" class="row container">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+        <h2>Your Oder list</h2>
+        <p>
+          <ul id="myorder">
+
+        </ul>
+      </p>
+       </div>
+       <div class="col-sm-8 col-md-8 col-lg-8">
+         <h2>Available Toppings</h2>
+         <div class="row">
+           <div class="col-sm-4 col-md-4 col-lg-4">
+             <div>
+              <img src="./img/black_olive.jpg" width="100%">
+              <div class="carousel-caption">
+                <p>Black Olive</p>
+
+              </div>
+             </div>
+
+           </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+              <div>
+                  <img src="./img/mushroom_pizza.jpg" width="100%">
+                  <div class="carousel-caption">
+                    <p>mushroom_pizza</p>
+                    
+                  </div>
+                 </div>
+
+           </div>
+
+         </div>
+         <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div>
+                    <img src="./img/onion_pizza.jpg" width="100%">
+                    <div class="carousel-caption">
+                      <p>Onion Pizza</p>
+                      
+                    </div>
+                   </div>
+
+          </div>
+         <div class="col-sm-4 col-md-4 col-lg-4">
+            <div>
+                <img src="./img/pinaeapple.jpg" width="100%">
+                <div class="carousel-caption">
+                  <p>pinaeapple</p>
+                  
+                </div>
+               </div>
+
+          </div>
+
+          </div>
+          <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div>
+                      <img src="./img/pepperoni.jpg" width="100%">
+                      <div class="carousel-caption">
+                        <p>pepperoni</p>
+                        
+                      </div>
+                     </div>
+
+            </div>
+           <div class="col-sm-4 col-md-4 col-lg-4">
+              <div>
+                  <img src="./img/extra_cheese.jpg" width="100%">
+                  <div class="carousel-caption">
+                    <p>Extra Cheese</p>
+                    
+                  </div>
+                 </div>
+ 
+            </div>
+
+            </div>
+    </div>
+    <div id="extra">
+      <h2>EXTRA ORDER</h2>
+
     </div>
     
     
