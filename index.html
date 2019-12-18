@@ -8,16 +8,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>pizza_pap</title>
 </head>
-<body id="body" class="container-fluid">
-    <div class="jumbotron" id="home">
-      <img src="./img/Kids Who Over Eat and How to Help Them Along the Way.jpeg" width="100%">
-      <div class="carousel-caption">
-        <div>
-         <h1>KARIBU PIZZA PAP APP !!</h1>
-     <p>Get your pizza delivered to you anywherre at any time with PIZZA PAP APP !!!</p> 
-     </div>
-     <div class="container">
-        <nav class="navbar navbar sticky-top navbar-light bg-transparent">
+<body id="body"> 
+  <div class="container">
+        <nav class="navbar navbar fixed-top navbar-light bg-light">
           <ul>
             <li class="d-inline-block"><a class="navbar-brand" href="#home">Home</a></li>
             <li class="d-inline-block"><a class="navbar-brand" href="#order">Order</a></li>
@@ -27,12 +20,23 @@
           </nav>
 
      </div>
+  <div class="container-fluid">
+   
+    <div class="jumbotron" id="home">
+      <img src="./img/Kids Who Over Eat and How to Help Them Along the Way.jpeg" width="100%">
+      <div class="carousel-caption">
+        <div>
+         <h1>KARIBU PIZZA PAP APP !!</h1>
+     <p>Get your pizza delivered to you anywherre at any time with PIZZA PAP APP !!!</p> 
+     </div>
+     
+    </div>
     </div>
     </div>
     <div id="order" class="row container">
        <div class="col-sm-4 col-md-4 col-lg-4">
-        <h2>Your Order list</h2>
-        <p>
+        <h2>Your Order List</h2>
+        <p id="myorder">
           <ul id="myorder">
 
         </ul>
@@ -45,7 +49,7 @@
            <div class="col-sm-4 col-md-4 col-lg-4">
              <div>
               <img src="./img/black_olive.jpg" width="100%">
-              <div class="carousel-caption">
+              <div class="carousel-caption bg-dark">
                 <p>Black Olive</p>
                 <select>
                   <option value="0">Size</option>
@@ -53,6 +57,8 @@
                   <option value="800">Medium</option>
                   <option value="1000">Large</option>
                 </select>
+                <br>
+                Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
 
               </div>
              </div>
@@ -61,7 +67,7 @@
           <div class="col-sm-4 col-md-4 col-lg-4">
               <div>
                   <img src="./img/mushroom_pizza.jpg" width="100%">
-                  <div class="carousel-caption">
+                  <div class="carousel-caption bg-dark">
                     <p>mushroom_pizza</p>
                     <select>
                         <option value="0">Size</option>
@@ -77,7 +83,7 @@
            <div class="col-sm-4 col-md-4 col-lg-4">
               <div>
                   <img src="./img/pepperoni.jpg" width="100%">
-                  <div class="carousel-caption">
+                  <div class="carousel-caption bg-dark">
                     <p>pepperoni</p>
                     <select>
                         <option value="0">Size</option>
@@ -95,7 +101,7 @@
             <div class="col-sm-4 col-md-4 col-lg-4">
                 <div>
                     <img src="./img/onion_pizza.jpg" width="100%">
-                    <div class="carousel-caption bg-dark text-black">
+                    <div class="carousel-caption bg-dark">
                       <p>Onion Pizza</p>
                       <select>
                           <option value="0">Size</option>
@@ -103,6 +109,7 @@
                           <option value="800">Medium</option>
                           <option value="1000">Large</option>
                         </select>
+                        <input placeholder="Quantity" type="number"  required>
                       
                     </div>
                    </div>
@@ -111,7 +118,7 @@
           <div class="col-sm-4 col-md-4 col-lg-4">
               <div>
                   <img src="./img/extra_cheese.jpg" width="100%">
-                  <div class="carousel-caption">
+                  <div class="carousel-caption bg-dark">
                     <p>Extra Cheese</p>
                     <select>
                         <option value="0">Size</option>
@@ -127,7 +134,7 @@
          <div class="col-sm-4 col-md-4 col-lg-4">
           <div>
               <img src="./img/pinaeapple.jpg" width="100%">
-              <div class="carousel-caption">
+              <div class="carousel-caption bg-dark">
                 <p>pinaeapple</p>
                 <select>
                     <option value="0">Size</option>
