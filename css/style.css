@@ -12,3 +12,6 @@ nav{
     width: 100%;
     text-align: center;
 }
+#chef1 , #chef2, #wow ,#chef3 {
+    display: none;
+}
