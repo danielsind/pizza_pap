@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>pizza_pap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>pizza_pap</title>
 </head>
-<body id="body"> 
+
+<body id="body">
   <div class="container">
-        <nav class="navbar navbar fixed-top navbar-light bg-light">
-          <ul>
-            <li class="d-inline-block"><a class="navbar-brand" href="#home">Home</a></li>
-            <li class="d-inline-block"><a class="navbar-brand" href="#order">Order</a></li>
-            <li class="d-inline-block"><a class="navbar-brand" href="#extra">Extra Order</a></li>
+    <nav class="navbar navbar fixed-top navbar-light bg-light">
+      <ul>
+        <li class="d-inline-block"><a class="navbar-brand" href="#home">Home</a></li>
+        <li class="d-inline-block"><a class="navbar-brand" href="#order">Order</a></li>
+        <li class="d-inline-block"><a class="navbar-brand" href="#extra">Extra Order</a></li>
 
-          </ul>
-          </nav>
+      </ul>
+    </nav>
 
-     </div>
+  </div>
   <div class="container-fluid">
-   
+
     <div class="jumbotron" id="home">
       <img src="./img/Kids Who Over Eat and How to Help Them Along the Way.jpeg" width="100%">
       <div class="carousel-caption text-dark">
         <div>
-         <h1>KARIBU PIZZA PAP APP !!</h1>
-         <img class="rounded-circle" src="./img/pizzachef.jpg">
-     <p>Get your pizza delivered to you anywherre at any time with PIZZA PAP APP !!!</p> 
-     </div>
-     
+          <h1>KARIBU PIZZA PAP APP !!</h1>
+          <img class="rounded-circle" src="./img/pizzachef.jpg">
+          <p>Get your pizza delivered to you anywherre at any time with PIZZA PAP APP !!!</p>
+        </div>
+
+      </div>
     </div>
+  </div>
+  <div id="order" class="row container">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <h2>Your Order List</h2>
+      <p>My Order List</p>
+      <img src="./img/sadchef2.jpg">
+      <p>Your List is still Empty</p>
+      <div id="myorder"></div>
     </div>
-    </div>
-    <div id="order" class="row container">
-       <div class="col-sm-4 col-md-4 col-lg-4">
-        <h2>Your Order List</h2>
-        <p>My Order List</p>
-        <img src="./img/sadchef2.jpg">
-        <p>Your List is still Empty</p>
-        <div id="myorder"></div>
-       </div>
-       <div class="col-sm-8 col-md-8 col-lg-8">
-         <h2>Available Toppings</h2>
-         <div class="row">
-           <div class="row">
-           <div class="col-sm-4 col-md-4 col-lg-4">
-             <div>
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      <h2>Available Toppings</h2>
+      <div class="row">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <div>
               <img src="./img/black_olive.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>Black Olive</p>
@@ -66,171 +68,177 @@
                   <option value="Paleo">Paleo</option>
                 </select>
                 <br>
-                <input placeholder="Quantity" type="number"  required>
-                <br>
-                Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
+                <input placeholder="Quantity" type="number" required>
+                <br><br>
+                <button onclick="blackOlive()" >Add to list</button>
 
               </div>
-             </div>
-
-           </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
-              <div>
-                  <img src="./img/mushroom_pizza.jpg" width="100%">
-                  <div class="carousel-caption bg-dark">
-                    <p>mushroom_pizza</p>
-                    <select>
-                        <option value="0">Size</option>
-                        <option value="600">Small</option>
-                        <option value="800">Medium</option>
-                        <option value="1000">Large</option>
-                      </select>
-                      <select>
-                        <option value="Random">Crust</option>
-                        <option value="Thick">Thick</option>
-                        <option value="Thin">Thin</option>
-                        <option value="Foccacia">Foccacia</option>
-                        <option value="Flatbread">Flatbread</option>
-                        <option value="Paleo">Paleo</option>
-                      </select>
-                      <br>
-                      <input placeholder="Quantity" type="number"  required>
-                      <br>
-                      Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
-                    
-                  </div>
-                 </div>
-
-           </div>
-           <div class="col-sm-4 col-md-4 col-lg-4">
-              <div>
-                  <img src="./img/pepperoni.jpg" width="100%">
-                  <div class="carousel-caption bg-dark">
-                    <p>pepperoni</p>
-                    <select>
-                        <option value="0">Size</option>
-                        <option value="600">Small</option>
-                        <option value="800">Medium</option>
-                        <option value="1000">Large</option>
-                      </select>
-                      <select>
-                        <option value="Random">Crust</option>
-                        <option value="Thick">Thick</option>
-                        <option value="Thin">Thin</option>
-                        <option value="Foccacia">Foccacia</option>
-                        <option value="Flatbread">Flatbread</option>
-                        <option value="Paleo">Paleo</option>
-                      </select>
-                      <br>
-                      <input placeholder="Quantity" type="number"  required>
-                      <br>
-                      Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
-                    
-                  </div>
-                 </div>
-
-        </div>
-        </div>
-         <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <div>
-                    <img src="./img/onion_pizza.jpg" width="100%">
-                    <div class="carousel-caption bg-dark">
-                      <p>Onion Pizza</p>
-                      <select>
-                          <option value="0">Size</option>
-                          <option value="600">Small</option>
-                          <option value="800">Medium</option>
-                          <option value="1000">Large</option>
-                        </select>
-                        <select>
-                          <option value="Random">Crust</option>
-                          <option value="Thick">Thick</option>
-                          <option value="Thin">Thin</option>
-                          <option value="Foccacia">Foccacia</option>
-                          <option value="Flatbread">Flatbread</option>
-                          <option value="Paleo">Paleo</option>
-                        </select>
-                        <br>
-                        <input placeholder="Quantity" type="number"  required>
-                       <br>
-                        Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
-
-                      
-                    </div>
-                   </div>
+            </div>
 
           </div>
           <div class="col-sm-4 col-md-4 col-lg-4">
-              <div>
-                  <img src="./img/extra_cheese.jpg" width="100%">
-                  <div class="carousel-caption bg-dark">
-                    <p>Extra Cheese</p>
-                    <select>
-                        <option value="0">Size</option>
-                        <option value="600">Small</option>
-                        <option value="800">Medium</option>
-                        <option value="1000">Large</option>
-                      </select>
-                      <select>
-                        <option value="Random">Crust</option>
-                        <option value="Thick">Thick</option>
-                        <option value="Thin">Thin</option>
-                        <option value="Foccacia">Foccacia</option>
-                        <option value="Flatbread">Flatbread</option>
-                        <option value="Paleo">Paleo</option>
-                      </select>
-                      <br>
-                      <input placeholder="Quantity" type="number"  required>
-                      <br>
-                      Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
-                    
-                  </div>
-                 </div>
- 
+            <div>
+              <img src="./img/mushroom_pizza.jpg" width="100%">
+              <div class="carousel-caption bg-dark">
+                <p>mushroom_pizza</p>
+                <select>
+                  <option value="0">Size</option>
+                  <option value="600">Small</option>
+                  <option value="800">Medium</option>
+                  <option value="1000">Large</option>
+                </select>
+                <select>
+                  <option value="Random">Crust</option>
+                  <option value="Thick">Thick</option>
+                  <option value="Thin">Thin</option>
+                  <option value="Foccacia">Foccacia</option>
+                  <option value="Flatbread">Flatbread</option>
+                  <option value="Paleo">Paleo</option>
+                </select>
+                <br>
+                <input placeholder="Quantity" type="number" required>
+                <br>
+                <br>
+                <button onclick="" >Add to list</button>
+
+              </div>
             </div>
-         <div class="col-sm-4 col-md-4 col-lg-4">
-          <div>
+
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <div>
+              <img src="./img/pepperoni.jpg" width="100%">
+              <div class="carousel-caption bg-dark">
+                <p>pepperoni</p>
+                <select>
+                  <option value="0">Size</option>
+                  <option value="600">Small</option>
+                  <option value="800">Medium</option>
+                  <option value="1000">Large</option>
+                </select>
+                <select>
+                  <option value="Random">Crust</option>
+                  <option value="Thick">Thick</option>
+                  <option value="Thin">Thin</option>
+                  <option value="Foccacia">Foccacia</option>
+                  <option value="Flatbread">Flatbread</option>
+                  <option value="Paleo">Paleo</option>
+                </select>
+                <br>
+                <input placeholder="Quantity" type="number" required>
+                <br>
+                <br>
+                <button onclick="" >Add to list</button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <div>
+              <img src="./img/onion_pizza.jpg" width="100%">
+              <div class="carousel-caption bg-dark">
+                <p>Onion Pizza</p>
+                <select>
+                  <option value="0">Size</option>
+                  <option value="600">Small</option>
+                  <option value="800">Medium</option>
+                  <option value="1000">Large</option>
+                </select>
+                <select>
+                  <option value="Random">Crust</option>
+                  <option value="Thick">Thick</option>
+                  <option value="Thin">Thin</option>
+                  <option value="Foccacia">Foccacia</option>
+                  <option value="Flatbread">Flatbread</option>
+                  <option value="Paleo">Paleo</option>
+                </select>
+                <br>
+                <input placeholder="Quantity" type="number" required>
+                <br>
+                <br>
+                <button onclick="" >Add to list</button>
+
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <div>
+              <img src="./img/extra_cheese.jpg" width="100%">
+              <div class="carousel-caption bg-dark">
+                <p>Extra Cheese</p>
+                <select>
+                  <option value="0">Size</option>
+                  <option value="600">Small</option>
+                  <option value="800">Medium</option>
+                  <option value="1000">Large</option>
+                </select>
+                <select>
+                  <option value="Random">Crust</option>
+                  <option value="Thick">Thick</option>
+                  <option value="Thin">Thin</option>
+                  <option value="Foccacia">Foccacia</option>
+                  <option value="Flatbread">Flatbread</option>
+                  <option value="Paleo">Paleo</option>
+                </select>
+                <br>
+                <input placeholder="Quantity" type="number" required>
+                <br>
+                <br>
+                <button onclick="" >Add to list</button>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <div>
               <img src="./img/pinaeapple.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>pinaeapple</p>
                 <select>
-                    <option value="0">Size</option>
-                    <option value="600">Small</option>
-                    <option value="800">Medium</option>
-                    <option value="1000">Large</option>
-                  </select>
-                  <select>
-                    <option value="Random">Crust</option>
-                    <option value="Thick">Thick</option>
-                    <option value="Thin">Thin</option>
-                    <option value="Foccacia">Foccacia</option>
-                    <option value="Flatbread">Flatbread</option>
-                    <option value="Paleo">Paleo</option>
-                  </select>
-                  <br>
-                  <input placeholder="Quantity" type="number"  required>
-                  <br>
-                  Add to list:<input type="checkbox" id="myCheck"  onclick="myFunction()">
-                
-              </div>
-             </div>
+                  <option value="0">Size</option>
+                  <option value="600">Small</option>
+                  <option value="800">Medium</option>
+                  <option value="1000">Large</option>
+                </select>
+                <select>
+                  <option value="Random">Crust</option>
+                  <option value="Thick">Thick</option>
+                  <option value="Thin">Thin</option>
+                  <option value="Foccacia">Foccacia</option>
+                  <option value="Flatbread">Flatbread</option>
+                  <option value="Paleo">Paleo</option>
+                </select>
+                <br>
+                <input placeholder="Quantity" type="number" required>
+                <br>
+                <br>
+                <button onclick="" >Add to list</button>
 
-         </div>
+              </div>
+            </div>
 
           </div>
-            </div>
-    <div id="extra">
-      <h2>EXTRA ORDER</h2>
 
-    </div>
+        </div>
+      </div>
+      <div id="extra">
+        <h2>EXTRA ORDER</h2>
 
-    
-    
+      </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-        <script src="./Js/jquery-3.3.1.js"></script>
-        <script src="./Js/scripts.js"></script>  
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="./Js/jquery-3.3.1.js"></script>
+      <script src="./Js/scripts.js"></script>
 </body>
+
 </html>
