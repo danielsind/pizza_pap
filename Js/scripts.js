@@ -1,7 +1,7 @@
-var balckOliveSize = parseInt(document.getElementsByTagName("select")[0].value);
-var blackOliveCrust =document.getElementsByTagName("select")[1].value
+var blackOliveCrust =document.getElementById("blackOliveCrust").value;
 function blackOlive (){
-    alert(balckOliveSize + blackOliveCrust)
+   blackOliveSize = prompt("What size of pizza/n" + " S-Small M-Medium L-Large")
+   alert(blackOliveSize);
 }
 $(document).ready(function(){
     $("h1").click(function(){
