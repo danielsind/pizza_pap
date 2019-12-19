@@ -30,6 +30,11 @@ function extraCheese(){
     extraCheeseCrust = parseInt(prompt("Crust: " + "1-Thick(Ksh.200) 2-Thin(KSh.100) 3-Deep(Ksh.150) 4-Stuffed(Ksh.200)"))
     extraCheeseQuantity = parseInt(prompt("Quantity?"))
 }
+function pineapple(){
+    pineapplesize = parseInt(prompt("Size: "+ " 1-Small(Ksh.500) 2-Medium(Ksh.700) 3-Large(Ksh.1000)"))
+    pineappleCrust = parseInt(prompt("Crust: " + "1-Thick(Ksh.200) 2-Thin(KSh.100) 3-Deep(Ksh.150) 4-Stuffed(Ksh.200)"))
+    pineappleQuantity = parseInt(prompt("Quantity ? "))
+}
 $(document).ready(function(){
     $("h1").click(function(){
         alert("A tilte")
