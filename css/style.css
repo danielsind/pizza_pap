@@ -1,15 +1,10 @@
 #body{
     text-align: center;
+
 }
 #order{
     text-align: center;
 }
 #put{
     width: 5px;
-}
-#thickb, #thinb , #paleob , #focb , #flatb{
-    display: none;
-}
-#thickm, #thinm , #paleom , #focm , #flatm{
-    display: none;
 }
