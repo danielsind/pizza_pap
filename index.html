@@ -16,7 +16,8 @@
       <ul>
         <li class="d-inline-block"><a class="navbar-brand" href="#home">Home</a></li>
         <li class="d-inline-block"><a class="navbar-brand" href="#order">Order</a></li>
-        <li class="d-inline-block"><a class="navbar-brand" href="#extra">Extra Order</a></li>
+        <li class="d-inline-block"><a class="navbar-brand" href="#extra">Manual</a></li>
+        <li class="d-inline-block"><a class="navbar-brand" href="#contacts">Contacts</a></li>
       </ul>
     </nav>
   </div>
@@ -45,14 +46,14 @@
       <img id="chef1" src="./img/chefboy.jpg">
       <img id="chef2" src="./img/huhboy.jpg">
       <img id="wow" src="./img/boychef.jpg">
-      <img id="chef3" src="./img/yourlistis.jpg">
+      <img id="chef3" src="./img/happyboychef.jpg">
       <p id="sadchef">Your List!!!</p>
       <button id="complete">Complete</button>
       <br>
-      <button id="deliver" onclick="">DELIVERY</button>
-      <button id="pick" onclick="">PICK UP</button>
-      
-      
+      <button id="deliver" onclick="deliver()">DELIVERY</button>
+      <button id="pick" onclick="pick()">PICK UP</button>
+
+
     </div>
     <div class="col-sm-8 col-md-8 col-lg-8">
       <h2>Available Toppings</h2>
@@ -63,7 +64,7 @@
               <img src="./img/black_olive.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>Black Olive</p>
-                <button onclick="blackOlive()">ORDER</button>
+                <button id="b1" onclick="blackOlive()">ORDER</button>
               </div>
             </div>
           </div>
@@ -72,7 +73,7 @@
               <img src="./img/mushroom_pizza.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>mushroom_pizza</p>
-                <button onclick="mushroom()">ORDER</button>
+                <button id="b1" onclick="mushroom()">ORDER</button>
               </div>
             </div>
           </div>
@@ -81,7 +82,7 @@
               <img src="./img/pepperoni.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>pepperoni</p>
-                <button onclick="pepperoni()">ORDER</button>
+                <button id="b1" onclick="pepperoni()">ORDER</button>
               </div>
             </div>
           </div>
@@ -92,7 +93,7 @@
               <img src="./img/onion_pizza.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>Onion Pizza</p>
-                <button onclick="onion()">ORDER</button>
+                <button id="b1" onclick="onion()">ORDER</button>
               </div>
             </div>
           </div>
@@ -101,7 +102,7 @@
               <img src="./img/extra_cheese.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>Extra Cheese</p>
-                <button onclick="extraCheese()">ORDER</button>
+                <button id="b1" onclick="extraCheese()">ORDER</button>
 
               </div>
             </div>
@@ -111,14 +112,23 @@
               <img src="./img/pinaeapple.jpg" width="100%">
               <div class="carousel-caption bg-dark">
                 <p>pineaapple</p>
-                <button onclick="pineapple()">ORDER</button>
+                <button id="b1" onclick="pineapple()">ORDER</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <br><br><br>
       <div id="extra">
-        <h2>EXTRA ORDER</h2>
+        <div class="jumbotron">
+        <h2>HOW TO USE THIS APP</h2>
+        <p>You simply Click on the order Buttons,of the topping that you want<br>You may order as many topping as you wish and all will be added to your list<br>Ensure you check your cost and monitor your spending</p>
+        <p>When you want to choose a size please fill in the number assigned to the size you need.</p>
+        <p>e.g 1-Small you type 1 for the small option</p>
+        <p>Keep adding up you list<br>after you are done press complete button or you can go straight to Delivery or Pick Options</p>
+        <p>ON delivery you will enter your location</p>
+        </div>
+
       </div>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

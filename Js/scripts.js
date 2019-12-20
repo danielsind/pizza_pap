@@ -15,7 +15,7 @@ function mushroom() {
     mushroomCrust = parseInt(prompt("Crust: " + "1-Thick(Ksh.200) 2-Thin(KSh.100) 3-Deep(Ksh.150) 4-Stuffed(Ksh.200)"))
     mushroomQuantity = parseInt(prompt("Quantity: "))
     totalCost = crustPrizes[mushroomCrust] + sizePrice[mushroomSize] * mushroomQuantity
-    document.getElementById("mushroomOrder").innerHTML = mushroomQuantity + " Mushroom " + sizes[mushroomSize] + "/" + crustNames[mushroomCrust] + " crust" + " @" + totalCost    
+    document.getElementById("mushroomOrder").innerHTML = mushroomQuantity + " Mushroom " + sizes[mushroomSize] + "/" + crustNames[mushroomCrust] + " crust" + " @" + totalCost
 }
 function pepperoni() {
     pepperoniSize = parseInt(prompt("Size: " + " 1-Small(Ksh.500) 2-Medium(Ksh.700) 3-Large(Ksh.1000)"))
@@ -23,7 +23,7 @@ function pepperoni() {
     pepperoniQuantity = parseInt(prompt("Quantity"))
     totalCost = crustPrizes[pepperoniCrust] + sizePrice[pepperoniSize] * pepperoniQuantity
     document.getElementById("pepperoniOrder").innerHTML = pepperoniQuantity + " Pepperoni " + sizes[pepperoniSize] + "/" + crustNames[pepperoniCrust] + " crust" + " @" + totalCost
-    
+
 
 
 
@@ -50,14 +50,38 @@ function pineapple() {
     totalCost = crustPrizes[pineappleCrust] + sizePrice[pineappleSize] * pineappleQuantity
     document.getElementById("pineappleOrder").innerHTML = pineappleQuantity + " Pineapple " + sizes[pineappleSize] + "/" + crustNames[pineappleCrust] + " crust" + " @" + totalCost
 }
+function deliver() {
+    var location = prompt("Type in your location please ")
+    alert("Your order will be delivered to you in due time at " + location)
+    alert("Thank you for trusting us")
+}
+function pick() {
+    alert("You may come pick your order at  Moringa(Ngong Lane Plaza/3rd floor).Feel free to contact us")
+    alert("Thank you for trusting us")
+}
 $(document).ready(function () {
-    $("button").click(function () {
+    $("#b1").click(function () {
         $("#sadchef").fadeToggle("slow")
         $("#complete").fadeToggle("slow")
         $("#chef2").fadeToggle("slow")
         $("#deliver").fadeToggle("slow")
         $("#pick").fadeToggle("slow")
     });
+    $("#complete").click(function () {
+        $("#sadchef").fadeToggle("slow")
+        $("#complete").fadeToggle("slow")
+        $("#chef2").fadeToggle("slow")
+        $("#deliver").fadeToggle("slow")
+        $("#pick").fadeToggle("slow")
+    })
+    $("#deliver").click(function () {
+        $("#chef2").fadeToggle()
+        $("#chef3").fadeToggle()
+    })
+    $("#pick").click(function () {
+        $("#chef2").fadeToggle()
+        $("#wow").fadeToggle()
+    })
 })
 /*function pizza (size,topping,crust){
     this.size = size
