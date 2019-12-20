@@ -12,6 +12,6 @@ nav{
     width: 100%;
     text-align: center;
 }
-#chef1 , #chef2, #wow ,#chef3 {
+#chef1 , #chef2, #wow ,#chef3,#deliver,#pick {
     display: none;
 }
