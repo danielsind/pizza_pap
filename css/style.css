@@ -11,4 +11,7 @@ nav{
 #order{
     margin-top: 5%;
     padding-top: 5%;
+}.footer{
+    font-size: 80px;
+    text-align: center;
 }
